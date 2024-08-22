@@ -1,6 +1,6 @@
 :root {
   --font: 'Inter', sans-serif;
-  --font-size: 18px;
+  --font-size: 16px;
   --first-color: #773dff;
   --second-color: #0e0e0f;
   --header-height: 80px;
@@ -44,13 +44,17 @@ header {
 
   .title {
     margin: 0;
-    font-size: var(--font-size);
+    padding: 0.5rem 0.75rem;
+    font-size: 16px;
+    background-color: rgba(119, 61, 255, 0.3);
+    color: #996dff;
+    border-radius: 8px;
   }
 }
 
 main {
   min-height: calc(100vh - var(--header-height));
-  padding: 1rem;
+  padding: 0 1rem 1rem;
   /* display: flex; */
   /* justify-content: center; */
   /* align-items: center; */
