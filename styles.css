@@ -66,6 +66,7 @@ main {
   padding-inline: 1rem;
 
   .text-encrypter {
+    width: 100%;
     min-height: calc(100vh - var(--header-height));
     padding-bottom: 1rem;
     margin: 0 auto 1rem;

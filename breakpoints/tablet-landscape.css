@@ -1,0 +1,28 @@
+main {
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .text-encrypter {
+    min-height: unset;
+    margin-bottom: 0;
+    flex-direction: row;
+
+    .encrypt,
+    .decrypt {
+      max-width: unset;
+      max-height: unset;
+      height: 500px;
+      width: auto;
+
+      .top {
+        grid-template-columns: 180px 1fr;
+
+        .function {
+          font-size: var(--font-size);
+        }
+      }
+    }
+  }
+}
