@@ -11,6 +11,7 @@ main {
 
     .switch {
       align-self: center;
+      rotate: 0deg;
     }
   }
 }
