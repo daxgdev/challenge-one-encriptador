@@ -1,12 +1,14 @@
 :root {
   --font: 'Inter', sans-serif;
-  --font-size: 16px;
+  --font-size: 1rem;
   --text-color: #f8f8f8;
   --first-color: #773dff;
   --second-color: #0e0e0f;
   --third-color: rgba(248, 248, 248, 0.02);
   --fourth-color: rgba(248, 248, 248, 0.05);
   --fifth-color: rgba(248, 248, 248, 0.03);
+  --sixth-color: rgba(248, 248, 248, 0.2);
+  --seventh-color: rgba(248, 248, 248, 0.7);
   --text-shadow: rgba(246, 246, 246, 0.8) 0 0 20px;
   --drop-shadow: drop-shadow(0 0 5px rgba(246, 246, 246, 0.3));
   --gradient: linear-gradient(45deg, var(--first-color), #673dff, #c23dff);
@@ -52,7 +54,7 @@ header {
   .title {
     margin: 0;
     padding: 0.5rem 0.75rem;
-    font-size: 16px;
+    font-size: var(--font-size);
     background-color: rgba(119, 61, 255, 0.3);
     color: #996dff;
     border-radius: 8px;
@@ -137,7 +139,7 @@ main {
           svg {
             width: 100%;
             height: 100%;
-            fill: #f8f8f833;
+            fill: var(--sixth-color);
             transition: fill 200ms ease, filter 200ms ease;
           }
 
@@ -162,7 +164,7 @@ main {
       svg {
         width: 100%;
         height: 100%;
-        fill: #f8f8f833;
+        fill: var(--sixth-color);
         transition: fill 200ms ease, filter 200ms ease;
       }
 
@@ -176,4 +178,17 @@ main {
 
 footer {
   height: 50px;
+  display: flex;
+  justify-content: center;
+  font-size: 0.875rem;
+  color: var(--seventh-color);
+
+  a {
+    font-weight: bold;
+    text-decoration: none;
+    background-image: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
