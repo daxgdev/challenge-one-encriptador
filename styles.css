@@ -130,7 +130,7 @@ main {
       textarea {
         width: 100%;
         flex-grow: 2;
-        padding: 0.5rem;
+        padding: 0.75rem 0.5rem;
         border: 1px solid var(--fourth-color);
         font-family: inherit;
         font-size: inherit;
