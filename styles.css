@@ -148,7 +148,7 @@ main {
 
       .buttons-container {
         height: 40px;
-        padding-inline: 0.5rem;
+        padding-inline: 1rem;
         border: 1px solid var(--fourth-color);
         border-top: none;
         display: flex;
