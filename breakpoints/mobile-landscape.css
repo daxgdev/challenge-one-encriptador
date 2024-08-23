@@ -1,0 +1,15 @@
+main {
+  .text-encrypter {
+    flex-direction: row;
+    align-items: stretch;
+
+    .encrypt,
+    .decrypt {
+      width: auto;
+    }
+
+    .switch {
+      align-self: center;
+    }
+  }
+}
