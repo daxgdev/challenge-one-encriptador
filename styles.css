@@ -134,9 +134,16 @@ main {
           background-color: transparent;
           cursor: pointer;
 
-          img {
+          svg {
             width: 100%;
             height: 100%;
+            fill: #f8f8f833;
+            transition: fill 200ms ease, filter 200ms ease;
+          }
+
+          &:hover > svg {
+            fill: var(--text-color);
+            filter: var(--drop-shadow);
           }
         }
       }
