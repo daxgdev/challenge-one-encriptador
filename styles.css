@@ -9,6 +9,7 @@
   --fifth-color: rgba(248, 248, 248, 0.03);
   --sixth-color: rgba(248, 248, 248, 0.2);
   --seventh-color: rgba(248, 248, 248, 0.7);
+  --eight-color: rgba(248, 248, 248, 0.01);
   --text-shadow: rgba(246, 246, 246, 0.8) 0 0 20px;
   --drop-shadow: drop-shadow(0 0 5px rgba(246, 246, 246, 0.3));
   --gradient: linear-gradient(45deg, var(--first-color), #673dff, #c23dff);
@@ -180,9 +181,18 @@ main {
       }
     }
 
+    .second-field {
+      .top > .notice {
+        background-color: var(--eight-color);
+      }
+      textarea {
+        background-color: var(--eight-color);
+      }
+    }
+
     .decrypt .notice > * {
       visibility: hidden;
-    } 
+    }
 
     .switch {
       width: 30px;
