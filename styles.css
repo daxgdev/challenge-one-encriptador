@@ -180,6 +180,10 @@ main {
       }
     }
 
+    .decrypt .notice > * {
+      visibility: hidden;
+    } 
+
     .switch {
       width: 30px;
       height: 30px;
