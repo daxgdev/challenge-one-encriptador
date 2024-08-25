@@ -22,5 +22,8 @@ const encrypt = (text) => {
 }
 
 textField.oninput = (e) => {
-  resultField.value = encrypt(e.target.value)
+  const conditions = /[^a-z0-9]/g
+  textField.value = textField.value.replace(conditions, '') 
+
+  resultField.value = encrypt(textField.value) 
 }
