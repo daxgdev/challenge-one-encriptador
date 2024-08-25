@@ -36,6 +36,10 @@ body {
   font-size: var(--font-size);
 }
 
+svg {
+  pointer-events: none;
+}
+
 header {
   height: var(--header-height);
   padding-inline: 1rem;
