@@ -1,5 +1,6 @@
 import { $ } from './utils.js'
 
+const firstField = $('.first-field')
 const textField = $('.first-field > textarea')
 const resultField = $('.second-field > textarea')
 
@@ -21,9 +22,23 @@ const encrypt = (text) => {
   return split.join('')
 }
 
-textField.oninput = (e) => {
-  const conditions = /[^a-z0-9]/g
-  textField.value = textField.value.replace(conditions, '') 
+// const decrypt = (text) => {
 
-  resultField.value = encrypt(textField.value) 
+// }
+
+textField.oninput = () => {
+  const conditions = /[^a-z0-9]/g
+  textField.value = textField.value.replace(conditions, '')
+
+  if (firstField.classList.contains('encrypt')) {
+    resultField.value = encrypt(textField.value)
+  } else if (firstField.classList.contains('decrypt')) {
+    // resultField.value = decrypt(textField.value)
+  }
 }
+
+// document.addEventListener('click', (e) => {
+//   if (e.target.matches('.switch')) {
+    
+//   }
+// })
