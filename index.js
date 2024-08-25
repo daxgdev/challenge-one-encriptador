@@ -27,7 +27,7 @@ const encrypt = (text) => {
 // }
 
 textField.oninput = () => {
-  const conditions = /[^a-z0-9]/g
+  const conditions = /[^a-z0-9 ]/g
   textField.value = textField.value.replace(conditions, '')
 
   if (firstField.classList.contains('encrypt')) {
