@@ -55,4 +55,9 @@ document.addEventListener('click', (e) => {
     textField.value = resultField.value
     resultField.value = currentText
   }
+
+  if (e.target.matches('.delete-text')) {
+    textField.value = ''
+    resultField.value = ''
+  }
 })
