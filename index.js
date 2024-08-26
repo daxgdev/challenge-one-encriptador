@@ -50,5 +50,9 @@ document.addEventListener('click', (e) => {
     firstField.classList.toggle('decrypt')
     firstField.classList.toggle('change-function')
     secondField.classList.toggle('change-function')
+
+    const currentText = textField.value
+    textField.value = resultField.value
+    resultField.value = currentText
   }
 })
