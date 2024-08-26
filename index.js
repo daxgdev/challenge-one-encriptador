@@ -1,4 +1,5 @@
 import { $ } from './utils.js'
+import { speak } from './speak.js'
 
 const firstField = $('.first-field')
 const secondField = $('.second-field')
@@ -63,5 +64,13 @@ document.addEventListener('click', (e) => {
 
   if (e.target.matches('.copy')) {
     navigator.clipboard.writeText(resultField.value)
+  }
+
+  if (e.target.matches('.speak-text')) {
+    speak(textField.value, e.target)    
+  }
+  
+  if (e.target.matches('.speak-result')) {
+    speak(resultField.value, e.target)    
   }
 })
