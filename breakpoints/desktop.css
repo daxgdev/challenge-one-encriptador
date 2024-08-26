@@ -24,8 +24,8 @@ main {
     margin-bottom: 0;
     flex-direction: row;
 
-    .encrypt,
-    .decrypt {
+    .first-field,
+    .second-field {
       max-width: 1000px;
       max-height: unset;
       height: 500px;

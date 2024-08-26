@@ -81,8 +81,8 @@ main {
     align-items: center;
     gap: 1rem;
 
-    .encrypt,
-    .decrypt {
+    .first-field,
+    .second-field {
       width: 100%;
       max-width: 700px;
       max-height: 400px;
@@ -102,6 +102,26 @@ main {
           justify-content: center;
           gap: 0.5rem;
           font-size: 0.75rem;
+        }
+
+        .function {
+          position: relative;
+          gap: 0;
+        }
+
+        .function > span > img {
+          margin-left: 0.5rem;
+        }
+
+        .function > span {
+          transition: transform 300ms ease,
+            opacity 250ms ease;
+        }
+
+        .function > span:nth-child(2) {
+          position: absolute;
+          transform: translateX(120%);
+          opacity: 0;
         }
 
         .lock,
@@ -184,6 +204,17 @@ main {
         }
       }
     }
+    .change-function > .top > .function {
+      span:nth-child(1) {
+        transform: translateX(-120%);
+        opacity: 0;
+      }
+
+      span:nth-child(2) {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
 
     .second-field {
       .top > .notice {
@@ -194,7 +225,7 @@ main {
       }
     }
 
-    .decrypt .notice > * {
+    .second-field .notice > * {
       visibility: hidden;
     }
 
@@ -206,6 +237,7 @@ main {
       border: none;
       background-color: transparent;
       cursor: pointer;
+      transition: transform 550ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
 
       svg {
         width: 100%;
@@ -218,6 +250,9 @@ main {
         fill: var(--text-color);
         filter: var(--drop-shadow);
       }
+    }
+    .spin {
+      transform: rotate(180deg);
     }
   }
 }
