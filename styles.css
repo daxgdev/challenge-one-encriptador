@@ -107,6 +107,7 @@ main {
         .function {
           position: relative;
           gap: 0;
+          overflow: hidden;
         }
 
         .function > span > img {
