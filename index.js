@@ -6,6 +6,7 @@ const firstField = $('.first-field')
 const secondField = $('.second-field')
 const textField = $('.first-field > textarea')
 const resultField = $('.second-field > textarea')
+const notification = $('.notification')
 
 const encrypt = (text) => {
   const split = text.split('')
@@ -56,14 +57,23 @@ document.addEventListener('click', (e) => {
   }
 
   if (e.target.matches('.copy')) {
-    navigator.clipboard.writeText(resultField.value)
+    if (resultField.value) {
+      e.target.setAttribute('disabled', '')
+      navigator.clipboard.writeText(resultField.value)
+      notification.classList.toggle('notification-active')
+
+      setTimeout(() => {
+        e.target.removeAttribute('disabled')
+        notification.classList.toggle('notification-active')
+      }, 2000)
+    }
   }
 
   if (e.target.matches('.speak-text')) {
-    speak(textField.value, e.target)    
+    speak(textField.value, e.target)
   }
-  
+
   if (e.target.matches('.speak-result')) {
-    speak(resultField.value, e.target)    
+    speak(resultField.value, e.target)
   }
 })

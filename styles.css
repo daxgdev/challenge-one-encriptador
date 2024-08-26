@@ -30,6 +30,7 @@ html {
 
 body {
   margin: 0;
+  position: relative;
   overscroll-behavior: none;
   scroll-behavior: smooth;
   font-weight: 300;
@@ -273,4 +274,44 @@ footer {
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+}
+
+.notification {
+  width: 200px;
+  height: 40px;
+  padding: 0.3rem;
+  position: absolute;
+  top: 30px;
+  left: calc(50% - 100px);
+  background: radial-gradient(862px at 6% 18%, rgb(21, 219, 149) 9.4%, rgb(26, 35, 160) 83.6%);
+  box-shadow: 0 0 16px rgba(14, 14, 15, 1);
+  border-radius: 40px;
+  transform: translateY(-200%);
+  transition: transform 550ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+
+  .container {
+    width: 100%;
+    height: 100%;
+    padding-inline: .75rem;
+    display: flex;
+    align-items: center;
+    background-color: rgba(14, 14, 15, 0.25);
+    border-radius: 30px;
+
+    .check {
+      width: 20px;
+      height: 20px;
+      fill: var(--text-color);
+    }
+
+    .notification-text {
+      flex-grow: 2;
+      text-align: center;
+      font-size: .875rem;     
+      font-weight: bold;
+    }
+  }
+}
+.notification-active {
+  transform: translateY(0);
 }
