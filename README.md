@@ -21,15 +21,19 @@ Este proyecto es una pequeña aplicación que permite encriptar y desencriptar t
   - Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.
 
 - **Cambio entre las funciones encriptar/desencriptar**
+
   Usando un botón es posible revertir el comportamiento para encriptar o desencriptar texto, haciendo que el texto que se arroje como resultado se transfiera al primer campo de texto y viceversa.
 
 - **Botón para narrar texto**
+
   En la parte inferior de los campos de texto, existen botones para narrar el texto que aparece en ellos.
 
 - **Botón para borrar texto**
+
   Debajo del primer campo de texto, puedes usar este botón para borrar todo el texto de los campos con un solo click.
 
 - **Botón para copiar texto**
+
   Usa este botón para copiar al portapapeles el texto dado como resultado; al hacer esto, se disparará una notificación indicando que el proceso fue exitoso.
 
 ## Como empezar a usar
