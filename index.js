@@ -60,4 +60,8 @@ document.addEventListener('click', (e) => {
     textField.value = ''
     resultField.value = ''
   }
+
+  if (e.target.matches('.copy')) {
+    navigator.clipboard.writeText(resultField.value)
+  }
 })
