@@ -1,18 +1,11 @@
 import { $ } from './modules/utils.js'
 import { speak } from './modules/speak.js'
+import { rules } from './modules/rules.js'
 
 const firstField = $('.first-field')
 const secondField = $('.second-field')
 const textField = $('.first-field > textarea')
 const resultField = $('.second-field > textarea')
-
-const rules = {
-  a: 'ai',
-  e: 'enter',
-  i: 'imes',
-  o: 'ober',
-  u: 'ufat'
-}
 
 const encrypt = (text) => {
   const split = text.split('')
