@@ -1,5 +1,5 @@
-import { $ } from './utils.js'
-import { speak } from './speak.js'
+import { $ } from './modules/utils.js'
+import { speak } from './modules/speak.js'
 
 const firstField = $('.first-field')
 const secondField = $('.second-field')
