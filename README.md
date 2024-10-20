@@ -40,7 +40,7 @@ Este proyecto es una pequeña aplicación que permite encriptar y desencriptar t
 
 1. Lo primero que hay que hacer es clonar este repositorio dentro de cualquier directorio de tu preferencia, usando el siguiente comando:
   
-    `git clone https://github.com/R3NN4T/Proyecto-Encriptador.git`
+    `git clone https://github.com/daxgdev/challenge-one-encriptador.git`
 
 2. Hecho esto navega al directorio creado:
     
